@@ -1,4 +1,4 @@
-from modules.queueOperations import enqueue, dequeue
+from modules.queueOperations import *
 
 
 def binaryTree(queue):
@@ -6,7 +6,7 @@ def binaryTree(queue):
         x = dequeue(queue)
         y = dequeue(queue)
 
-        if x[0] == y[0] and x[1] == "":
+        if x[0] == y[0] and not x[1] == "":
             x, y = y, x
 
         enqueue(queue, (x[0] + y[0], "", x, y))

@@ -1,5 +1,5 @@
 import modules.heapMin as Import
-from modules.heapMin import buildMinHeap, minHeapify
+from modules.heapMin import *
 
 
 def createQueue(dictionary):
