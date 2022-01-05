@@ -1,7 +1,12 @@
 from modules.countChars import countChars
+from modules.queueOperations import createQueue
 from modules.readFile import readFile
 
 if __name__ == '__main__':
     text = readFile("data/text.txt")
+
     dictionary = countChars(text)
-    print(dictionary)
+    print("Dictionary: ", dictionary)
+
+    priorityQueue = createQueue(dictionary)
+    print("Priority queue: ", priorityQueue)
